@@ -26,7 +26,11 @@ console.log(add(57, 10));
 /*  Arrow function */
 var multiply = function (x, y) { return x * y; };
 console.log(multiply(10, 5));
-var user1 = { id: 1, name: "KalaiVanan", email: "kalaivkv24@gmail.com" };
+var user1 = {
+    id: 1,
+    name: "KalaiVanan",
+    email: "kalaivkv24@gmail.com",
+};
 /* Classes & Inheritance */
 var Person = /** @class */ (function () {
     function Person(name, age) {
