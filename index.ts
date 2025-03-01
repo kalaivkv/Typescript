@@ -86,4 +86,19 @@ let value: string | number;
 value = "Hello kalai";  
 value = 24;       
 
-
+/* Generic Interface */
+interface Box<T> {
+    value: T;
+  } 
+  const numberBox: Box<number> = { value: 500 };
+  const stringBox: Box<string> = { value: "I am kalaivanan ." };
+  console.log(numberBox.value); 
+  console.log(stringBox.value); 
+  
+  /* Generic Function with Arrays */
+  function getFirstElement<T>(arr: T[]): T {
+    return arr[1];
+  }
+  console.log(getFirstElement<number>([1, 2, 3])); 
+  console.log(getFirstElement<string>(["kalai", "siva", "Hari"])); 
+  

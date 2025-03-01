@@ -72,14 +72,19 @@ input = 100;
 if (typeof input === "number") {
     console.log(input.toFixed(2));
 }
-function throwError(message) {
-    throw new Error(message);
-}
-// Usage
-throwError("Something went wrong!"); // 🚀 This function never returns
 /* Tuples */
 var user = [1, "kalai"];
 /* Intersection Type */
 var value;
 value = "Hello kalai";
 value = 24;
+var numberBox = { value: 500 };
+var stringBox = { value: "I am kalaivanan ." };
+console.log(numberBox.value);
+console.log(stringBox.value);
+/* Generic Function with Arrays */
+function getFirstElement(arr) {
+    return arr[1];
+}
+console.log(getFirstElement([1, 2, 3]));
+console.log(getFirstElement(["kalai", "siva", "Hari"]));
